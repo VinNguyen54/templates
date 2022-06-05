@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PBook</title>
     <!-- link css online -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- CSS links -->
     <link rel="stylesheet" href="home.css">
 
 </head>
 
- 
+
 <body>
-<!-- Header section starts -->
+    <!-- Header section starts -->
     <header class="header">
         <div class="header-1">
             <a href="#" class="logo"><i class="fas fa-book"> PBook</i></a>
@@ -27,8 +28,14 @@
 
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <div id="login-btn" class="fas fa-user"></div>
+                <a href="#" class="fas fa-shopping-cart"><span>(0)</span></a>
+                <div class="user-dropdown">
+                    <div id="login-btn" class="fas fa-user"></div>
+                    <div class="dropdown-content">
+                        <a href="#admin" class="fas fa-address-card"> Admin</a>
+                        <a href="#logout" class="fas fa-right-from-bracket"> Logout</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -41,67 +48,67 @@
             </nav>
         </div>
     </header>
-<!-- Header section end -->    
+    <!-- Header section end -->
 
 
 
-<!-- Bottom navbar -->
-<nav class="bottom-navbar">
-    <a href="#home" class="fas fa-home"></a>
-    <a href="#home" class="fas fa-list"></a>
-    <a href="#home" class="fas fa-tags"></a>
-    <a href="#home" class="fas fa-blog"></a>
-</nav>
-<!-- ********** -->
+    <!-- Bottom navbar -->
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#home" class="fas fa-list"></a>
+        <a href="#home" class="fas fa-tags"></a>
+        <a href="#home" class="fas fa-blog"></a>
+    </nav>
+    <!-- ********** -->
 
 
 
-<!-- login form -->
-<div class="login-form-container">
-    
-    <div id="close-login-btn" class="fas fa-times"></div>
+    <!-- login form -->
+    <div class="login-form-container">
 
-    <form action="">
-        <h3>Sign in</h3>
-        <span>Username</span>
-        <input type="email" name="" class='box' placeholder="Enter your email" id="">
-        <span>Password</span>
-        <input type="password" name="" class="box" placeholder="Enter your password" id="">
-        <div class="check-box">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">Remember me</label>
-        </div>
-        <input type="submit" value="sign in" class="btn">
-        <p>Don't have an account ? <a href="#">Click here</a></p>
-    </form>
-</div>
-<!-- ********** -->
+        <div id="close-login-btn" class="fas fa-times"></div>
 
-
-
-<!-- home section -->
-<section class="home" id="home">
-    <div class="row">
-
-        <div class="content">
-            <h3>upto 70% off</h3>
-            <p>kwbgoinbw g egjne geogje gw gowgjw gwojg wgojg gwg weg owg hoieg wghwpg wp egjw egowg </p>
-            <a href="#" class="btn">Shop now</a>
-        </div>
-
-        <div class="swiper books-slider">
-            <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="/images/book-1.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/images/book-2.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/images/book-3.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/images/book-4.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/images/book-5.png" alt=""></a>
+        <form action="">
+            <h3>Sign in</h3>
+            <span>Username</span>
+            <input type="email" name="" class='box' placeholder="Enter your email" id="">
+            <span>Password</span>
+            <input type="password" name="" class="box" placeholder="Enter your password" id="">
+            <div class="check-box">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
             </div>
-            <img src="./images/stand.png" class="stand" alt="">
-        </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>Don't have an account ? <a href="#">Click here</a></p>
+        </form>
     </div>
-</section>
-<!-- ********** -->
+    <!-- ********** -->
+
+
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="row">
+
+            <div class="content">
+                <h3>upto 70% off</h3>
+                <p>kwbgoinbw g egjne geogje gw gowgjw gwojg wgojg gwg weg owg hoieg wghwpg wp egjw egowg </p>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="/images/book-1.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="/images/book-2.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="/images/book-3.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="/images/book-4.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="/images/book-5.png" alt=""></a>
+                </div>
+                <img src="./images/stand.png" class="stand" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ********** -->
 
 
 
@@ -201,209 +208,210 @@
 
 
 
-<!-- arrivals section  -->
-<section id="arrivals" class="arrivals">
-    <h1 class="heading"><span>New arrivals</span></h1>
+    <!-- arrivals section  -->
+    <section id="arrivals" class="arrivals">
+        <h1 class="heading"><span>New arrivals</span></h1>
 
-    <div class="swiper arrivals-slider">
+        <div class="swiper arrivals-slider">
 
-        <div class="swiper-wrapper ">
+            <div class="swiper-wrapper ">
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="/images/book-6.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99<span> $20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="/images/book-6.png" alt="">
                     </div>
-                </div>
-            </a>
-            
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="/images/book-7.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99<span> $20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">$15.99<span> $20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-            
+                </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="/images/book-8.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99<span> $20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="/images/book-7.png" alt="">
                     </div>
-                </div>
-            </a>
-            
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="/images/book-9.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99 <span> $20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">$15.99<span> $20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-           
+                </a>
 
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="/images/book-10.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>new arrivals</h3>
-                    <div class="price">$15.99<span> $20.99</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="/images/book-8.png" alt="">
                     </div>
-                </div>
-            </a>
-            
-        </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">$15.99<span> $20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
 
-    </div>
-</section>
-<!-- ********** -->
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="/images/book-9.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">$15.99 <span> $20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
 
 
-<!-- reviews section  -->
-<section id="reviews" class="reviews">
-    
-    <h1 class="heading"><span>Client's reviews</span></h1>
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="/images/book-10.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>new arrivals</h3>
+                        <div class="price">$15.99<span> $20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
 
-    <div class="swiper reviews-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="/images/pic-1.png" alt="">
-                <h3>Vin Nguyen</h3>
-                <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="/images/pic-2.png" alt="">
-                <h3>Vin Nguyen</h3>
-                <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="/images/pic-3.png" alt="">
-                <h3>Vin Nguyen</h3>
-                <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="/images/pic-4.png" alt="">
-                <h3>Vin Nguyen</h3>
-                <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="/images/pic-5.png" alt="">
-                <h3>Vin Nguyen</h3>
-                <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="/images/pic-6.png" alt="">
-                <h3>Vin Nguyen</h3>
-                <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
             </div>
 
         </div>
-    </div>
-
-</section>
-
-<!-- ********** -->
+    </section>
+    <!-- ********** -->
 
 
+    <!-- reviews section  -->
+    <section id="reviews" class="reviews">
 
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<!-- JS links -->
-<script src="home.js"></script>
+        <h1 class="heading"><span>Client's reviews</span></h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="/images/pic-1.png" alt="">
+                    <h3>Vin Nguyen</h3>
+                    <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/pic-2.png" alt="">
+                    <h3>Vin Nguyen</h3>
+                    <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/pic-3.png" alt="">
+                    <h3>Vin Nguyen</h3>
+                    <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/pic-4.png" alt="">
+                    <h3>Vin Nguyen</h3>
+                    <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/pic-5.png" alt="">
+                    <h3>Vin Nguyen</h3>
+                    <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/images/pic-6.png" alt="">
+                    <h3>Vin Nguyen</h3>
+                    <p>agfiaw bawf hauwf abn afw fuhwfa wfhiuwf aofwfhawf awfawfhaw faofawfaw faowfwfhaofafhaofaw.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ********** -->
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JS links -->
+    <script src="home.js"></script>
 
 </body>
+
 </html>

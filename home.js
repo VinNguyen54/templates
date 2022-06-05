@@ -5,30 +5,12 @@ document.querySelector('#search-btn').onclick = () =>{
     searchForm.classList.toggle('active');
 }
 
-
-
-
-
-// open login form
-let loginForm = document.querySelector('.login-form-container')
+// user open dropdown 
+dropdown = document.querySelector('.dropdown-content');
 
 document.querySelector('#login-btn').onclick = () =>{
-    loginForm.classList.toggle('active');
+  dropdown.classList.toggle('show');
 }
-
-
-
-
-
-// close login form
-
-document.querySelector('#close-login-btn').onclick = () =>{
-    loginForm.classList.remove('active');
-}
-
-
-
-
 
 
 // keep navbar
